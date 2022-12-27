@@ -29,7 +29,7 @@ namespace Task13
             {
                 if (value is "")
                 {
-                    Console.WriteLine("Не введен адрес");
+                    adress = "Неизвестен";
                 }
                 else
                 {
@@ -84,7 +84,7 @@ namespace Task13
         public string Print()
         {
             if (length <= 0 || width <= 0 || hight <= 0)
-                return "Некотректно введены данные для результата работы программы";
+                return "Некорректно введены данные";
             else
                 return $"Адрес: {adress}, размеры: длина={length}м, ширина={width}м, высота={hight}м";
         }
